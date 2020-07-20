@@ -1,22 +1,108 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>数当てゲーム</title>
-    <link rel="stylesheet" href="kadai01.css">
-    <script src="kadai01.js" defer></script>
+    <script type="text/javascript" src="port.js"></script>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <h1>数当てゲーム</h1>
-        <h4>3桁の数値を当ててみよう</h4>
-        <input type="number" id="num" min="0" max="999">
-        <button id="check">チェック！</button>
-        <p class="message-container">
-            
-        </p>
-    </main>
+    <div id="stalker"></div>
+    <header id="header">
+        <section class="l-in">
+        <div class="center">
+            <span onmouseover="setcolor(this,1);" onmouseout="setcolor(this,0);">
+            <h1>PORTFOLIO</h1>
+        </span>
+            <p>2020</p>
+        </div>
+    </section>
+</header>
+
+<div class="contents l-cf">
+    <section class="l-in">
+        <div class="post about">
+            <span onmouseover="setcolor(this,1);" onmouseout="setcolor(this,0);">
+            <h2>About</h2>
+            </span>
+            <div class="about-image">
+                <img src="profile.png">
+            </div>
+            <div class="name">
+                <p>小椋 雛梨</p>
+                <p>Ogura Hinari</p>
+            </div>
+            <div class="about-info">
+                <p>2000年生まれ。愛知県出身。<br>CG映像やパソコンを触ることが好きで愛知工業大学の情報科学部へ。<br>高校は商業高校で簿記やプログラミングを学ぶ。<br>趣味は読書やアニメ鑑賞。<br>声優さんが好き。</p> <p>Skill：<span>HTML,CSS,Javascript,photoshop,illustrator</span></p>
+            </div>
+        </div>
+        <div class="post work work-pc">
+            <span onmouseover="setcolor(this,1);" onmouseout="setcolor(this,0);">
+            <h2>Work</h2>
+            </span>
+            <article class="post-list l-cf">
+                <div class="post-image">
+                    <img src="com.png" alt="graphic">
+                </div>
+                <div class="post-text">
+                    <h3>Homepage1</h3>
+                    <p>架空の会社のホームページをHTMLで作成しました。画像を正しく貼り付けたりするのが大変でしたが自分で1から作ることでHTMLに少しずつ慣れることができました。</p>
+                </div>
+    
+            </article>
+            <article class="post-list l-cf">
+                <div class="post-image">
+                    <img src="company2.png" alt="graphic">
+                </div>
+                <div class="post-text">
+                    <h3>Homepage2</h3>
+                    <p>2つ目の会社のホームページですがヘッダーを工夫したり画像を大きく表示することをしました。動画も再生することができます。</p>
+                </div>
+            </article>
+            <article class="post-list l-cf">
+                <div class="post-image">
+                    <img src="toiawase.png" alt="graphic">
+                </div>
+                <div class="post-text">
+                    <h3>Contact</h3>
+                    <p>問い合わせフォームをHTML,CSSで制作しました。文字や半角英数字の入力の設定などを行いました。送信ボタンを押すことで入力内容の確認もできます。</p>
+                </div>
+            </article>
+            <article class="post-list l-cf">
+                <div class="post-image">
+                    <img src="seisaku.png" alt="graphic">
+                </div>
+                <div class="post-text">
+                    <h3>Results</h3>
+                    <p>今までの制作実績を紹介するページを作りました。HTML,CSSの他にJavascriptを使用してアニメーションをつけました。背景色もグラデーションにしました。</p>
+                </div>
+            </article>
+            <article class="post-list l-cf">
+                <div class="post-image">
+                    <img src="bow.png" alt="graphic">
+                </div>
+                <div class="post-text">
+                    <h3>Bowling</h3>
+                    <p>mayaでボウリングのピンやレールなどをモデリングしました。ピンのモデリングが難しく写真を見ながら実物に近くなるよう工夫しました。</p>
+                </div>
+            </article>
+            <article class="post-list l-cf">
+                <div class="post-image">
+                    <img src="iruka.png" alt="graphic">
+                </div>
+                <div class="post-text">
+                    <h3>Dolphin</h3>
+                    <p>mayaでイルカが海の中を泳ぐ映像を作りました。イルカのモデリングや背景の設定を行いました。モデリングだけでも大変でしたがさらに動きを付けるのでよりリアルになるように細かく動きを設定しました。</p>
+                </div>
+            </article>
+        </div>
+    </section>
+</div>
+<footer id="footer">
+   
+    <section class="l-in">
+        <p>@2020 Portfolio | Hinari Ogura</p>
+    </section>
+</footer>
 </body>
-</html>
